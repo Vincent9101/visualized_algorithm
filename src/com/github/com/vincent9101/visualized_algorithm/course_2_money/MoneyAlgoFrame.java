@@ -31,10 +31,16 @@ public class MoneyAlgoFrame extends AlgoFrame {
 
         @Override
         protected void paintData(Graphics2D graphics2D) {
-
+            //绘制那个长方形直方图
             int recWidth = getCanvasWidth() / money.length;
             for (int i = 0; i < money.length; i++) {
-                AlgoFrameHelper.fillRectangle(graphics2D, i * recWidth + 1, getCanvasHeight() - money[i], recWidth - 1, money[i]);
+                if (money[i].intValue() > 0) {
+                    AlgoFrameHelper.setGraphicColor(graphics2D, AlgoFrameHelper.Red);
+                    AlgoFrameHelper.fillRectangle(graphics2D, i * recWidth + 1, getCanvasHeight() / 2 - money[i], recWidth - 1, money[i]);
+                } else if (money[i].intValue() < 0) {
+                    AlgoFrameHelper.setGraphicColor(graphics2D, AlgoFrameHelper.LightBlue);
+                    AlgoFrameHelper.fillRectangle(graphics2D, i * recWidth + 1, getCanvasHeight() / 2, recWidth - 1, -money[i]);
+                }
             }
 
         }
