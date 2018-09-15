@@ -19,18 +19,27 @@ public class AlgoTest {
     }
 
     public static void main(String args[]) {
-        algoFrameTest();
+        AlgoVisualizer algoVisualizer =algoFrameFactory("circle");
 
     }
 
-    public static void algoFrameTest() {
+    public static AlgoVisualizer algoFrameFactory(String name) {
 
-        int sceneWidth = 1500;
-        int sceneHeight = 1000;
+        int sceneWidth = 800;
+        int sceneHeight = 800;
         int n = 20, radius = 50;
-//        AlgoVisualizer algoVisualizer = new CircleAlgoVisualizer("TestCircle",sceneWidth, sceneHeight, n, radius);
-        AlgoVisualizer algoVisualizer = new MoneyAlgoVisualizer("TestLLLLLL", sceneWidth, sceneHeight);
+        AlgoVisualizer algoVisualizer = null;
+        switch (name) {
+            case "circle":
+                algoVisualizer = new CircleAlgoVisualizer(name, sceneWidth, sceneHeight, n, radius);
+                break;
+            case "money":
+                new MoneyAlgoVisualizer(name, sceneWidth, sceneHeight);
+                break;
+        }
 
+
+        return algoVisualizer;
 
     }
 
