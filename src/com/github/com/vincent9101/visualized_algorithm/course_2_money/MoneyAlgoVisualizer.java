@@ -40,13 +40,14 @@ public class MoneyAlgoVisualizer extends AlgoVisualizer {
             //绘制数据
             Arrays.sort(money);
             frame.render(money);
-            AlgoFrameHelper.pause(2);
+            AlgoFrameHelper.pause(40);
             //更新数据
-            for (int i = 0; i < money.length; i++) {
-                int j = (int) (Math.random() * money.length);
-                money[i]--;
-                money[j]++;
-
+            for (int frequency = 0; frequency < 50; frequency++) {
+                for (int i = 0; i < money.length; i++) {
+                    int j = (int) (Math.random() * money.length);
+                    money[i]--;
+                    money[j]++;
+                }
             }
 
         }

@@ -19,7 +19,7 @@ public class AlgoTest {
     }
 
     public static void main(String args[]) {
-        AlgoVisualizer algoVisualizer =algoFrameFactory("circle");
+        AlgoVisualizer algoVisualizer =algoFrameFactory("money");
 
     }
 
@@ -34,7 +34,7 @@ public class AlgoTest {
                 algoVisualizer = new CircleAlgoVisualizer(name, sceneWidth, sceneHeight, n, radius);
                 break;
             case "money":
-                new MoneyAlgoVisualizer(name, sceneWidth, sceneHeight);
+               algoVisualizer = new MoneyAlgoVisualizer(name, sceneWidth, sceneHeight);
                 break;
         }
 
