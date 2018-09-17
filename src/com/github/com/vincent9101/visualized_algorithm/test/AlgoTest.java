@@ -19,7 +19,8 @@ public class AlgoTest {
     }
 
     public static void main(String args[]) {
-        AlgoVisualizer algoVisualizer =algoFrameFactory("money");
+    algoFrameFactory("money");
+
 
     }
 
