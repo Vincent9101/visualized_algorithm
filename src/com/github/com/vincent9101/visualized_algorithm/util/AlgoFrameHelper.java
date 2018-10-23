@@ -104,7 +104,7 @@ public class AlgoFrameHelper {
      * @param y
      * @param radius
      */
-    public static void stokenCircle(Graphics2D g2d, int x, int y, int radius) {
+    public static void strokenCircle(Graphics2D g2d, int x, int y, int radius) {
         Ellipse2D circle = new Ellipse2D.Double(x - radius, y - radius, 2 * radius, 2 * radius);
         g2d.draw(circle);
     }

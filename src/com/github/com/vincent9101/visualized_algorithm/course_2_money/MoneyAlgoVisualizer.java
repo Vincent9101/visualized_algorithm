@@ -4,7 +4,6 @@ import com.github.com.vincent9101.visualized_algorithm.controller.AlgoVisualizer
 import com.github.com.vincent9101.visualized_algorithm.util.AlgoFrameHelper;
 
 import java.util.Arrays;
-import java.util.Collections;
 
 
 /**

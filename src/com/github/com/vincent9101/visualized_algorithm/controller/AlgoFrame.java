@@ -1,4 +1,4 @@
-package com.github.com.vincent9101.visualized_algorithm.frame_view;
+package com.github.com.vincent9101.visualized_algorithm.controller;
 
 import javax.swing.*;
 import java.awt.*;

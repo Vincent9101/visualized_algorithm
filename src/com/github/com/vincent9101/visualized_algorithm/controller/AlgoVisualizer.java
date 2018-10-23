@@ -1,6 +1,4 @@
 package com.github.com.vincent9101.visualized_algorithm.controller;
-
-import com.github.com.vincent9101.visualized_algorithm.frame_view.AlgoFrame;
 import java.awt.*;
 
 
